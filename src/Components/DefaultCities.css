@@ -1,0 +1,21 @@
+.city{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: medium;
+}
+.btn{
+  /* margin:25px; */
+  /* margin-bottom: 0px; */
+  cursor: pointer;
+}
+.btn:hover{
+    color: black;
+}

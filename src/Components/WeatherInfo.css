@@ -1,0 +1,61 @@
+.weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    margin-bottom: 0;
+}
+.extras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+.feels{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+.humidity,.wind{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.temp{
+    font-size: xx-large;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+}
+.weather2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+
+.max,.sunrise,.sunset{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+.min{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 20px; */
+}
