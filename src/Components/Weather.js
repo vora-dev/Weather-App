@@ -1,3 +1,4 @@
+let API_KEY;
 const fetchdata = async (url) => {
   let response = await fetch(url);
   let data = await response.json();
@@ -56,7 +57,7 @@ const weathercall = async (input) => {
     (input.length === 2
       ? "lat=" + input[0] + "&lon=" + input[1]
       : "q=" + input[0]) +
-    "&appid=80220b40a3fd90d672deb4ab589c760b&units=metric";
+    "&appid="+API_KEY+"&units=metric";
   let wc = await fetchdata(url);
   const {
     coord: { lat, lon },
@@ -72,7 +73,7 @@ const onecall = async (lat, lon) => {
     lat +
     "&lon=" +
     lon +
-    "&appid=80220b40a3fd90d672deb4ab589c760b&units=metric";
+    "&appid="+API_KEY+"&units=metric";
   let oc = await fetchdata(url);
   return oc;
 };
